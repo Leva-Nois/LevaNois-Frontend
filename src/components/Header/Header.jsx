@@ -7,9 +7,8 @@ const Header = () => {
   return (
     <div>
       <section id="header-section">
-        <img src={Logo} alt="Logo da LevaNois" />
+        <img src={Logo} alt="Logo da Leva Nóis" />
         <nav id="list">
-          {/* TODO: Adicionar Link to */}
           <li id="list-item">
             <Link to="/" id="item-link">
               Início

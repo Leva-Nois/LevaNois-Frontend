@@ -16,18 +16,18 @@ const Footer = () => {
         <div className="footer-left">
           <h4>Nos acompanhe</h4>
           <div className="footer-social">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <img src={LinkedinIcon} className="social-icon" alt="LinkedIn" />
+            <a href="https://www.linkedin.com/company/leva-nois" target="_blank" rel="noopener noreferrer">
+              <img src={LinkedinIcon} className="social-icon" alt="LinkedIn da Leva Nóis" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src={InstagramIcon} className="social-icon" alt="Instagram" />
+            <a href="https://www.instagram.com/leva.nois/" target="_blank" rel="noopener noreferrer">
+              <img src={InstagramIcon} className="social-icon" alt="Instagram da Leva Nóis" />
             </a>
           </div>
-          <p className="contact-email">Contato: levanois@levanois.com.br</p>
+          <p className="contact-email">Contato: leva_nois@outlook.com</p>
         </div>
         
         <div className="footer-right">
-          <img src={Logo} alt="Logo da LevaNois" className="footer-logo" />
+          <img src={Logo} alt="Logo da Leva Nóis" className="footer-logo" />
           <nav className="footer-nav">
             <ul>
               <li>
