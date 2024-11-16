@@ -1,17 +1,54 @@
 /* src/components/LandingPage/Destinos.css */
+
 .destinos {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .destinos-list {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .destino-item {
-    font-size: 1.5em;
-    color: #023047;
-  }
-  
+  padding: 40px;
+  background-color: #F5F5F5; /* Cinza claro */
+  text-align: center;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+
+.destinos h2 {
+  font-size: 2rem;
+  color: #04066F; /* Azul escuro */
+  margin-bottom: 20px;
+}
+
+.destinos-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.destino-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 120px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destino-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.destino-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.destino-nome {
+  font-size: 1rem;
+  color: #081469; /* Azul escuro */
+  font-weight: 600;
+}

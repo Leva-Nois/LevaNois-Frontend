@@ -17,8 +17,10 @@ const LandingPage = () => {
     <div>
       <Header/>
       <BannerInicial />
+      <Destinos />
       <Inspiracional />
       <Servicos/>
+      <ApresentacaoPaises />
       <Footer/>
     </div>
   );

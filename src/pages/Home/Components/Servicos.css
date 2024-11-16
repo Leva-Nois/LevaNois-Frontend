@@ -1,33 +1,60 @@
 /* src/pages/Home/Servicos.css */
+
 .servicos {
   padding: 40px;
   text-align: center;
-  background-color: #FEF3E2;
+  background-color: #e4b909;
 }
 
 .servicos-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas por linha */
   gap: 20px;
+  justify-items: center;
 }
 
 .servico-card {
-  background-color: #04066F;
+  background-color: #04066F; /* Azul escuro */
   color: white;
   padding: 20px;
   border-radius: 10px;
   width: 280px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.servico-card h3 {
-  color: #FFB900;
+.servico-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .servico-icon {
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
+}
+
+.servico-card h3 {
+  color: #FFB900; /* Amarelo */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.servico-card p {
+  font-size: 1rem;
+  color: #F1F1F1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .servicos-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas médias */
+  }
+}
+
+@media (max-width: 480px) {
+  .servicos-container {
+    grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
+  }
 }

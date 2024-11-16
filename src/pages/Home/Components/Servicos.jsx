@@ -1,12 +1,12 @@
 // src/pages/Home/Servicos.jsx
 import React from 'react';
 import './Servicos.css';
-import PlanejamentoIcon from '../../../assets/HomeAssets/dinheiro.png';
-import GamificationIcon from '../../../assets/HomeAssets/jogo.png';
-import TipsIcon from '../../../assets/HomeAssets/dicas.png';
-import FinanceIcon from '../../../assets/HomeAssets/financia.png';
-import MentorshipIcon from '../../../assets/HomeAssets/mentoria.png';
-import CommunityIcon from '../../../assets/HomeAssets/comunidade.png';
+import PlanejamentoIcon from '../../../assets/HomeAssets/Servicos/dinheiro.png';
+import GamificationIcon from '../../../assets/HomeAssets/Servicos/jogo.png';
+import TipsIcon from '../../../assets/HomeAssets/Servicos/dicas.png';
+import FinanceIcon from '../../../assets/HomeAssets/Servicos/financia.png';
+import MentorshipIcon from '../../../assets/HomeAssets/Servicos/mentoria.png';
+import CommunityIcon from '../../../assets/HomeAssets/Servicos/comunidade.png';
 
 const Servicos = () => {
   const services = [
@@ -21,7 +21,7 @@ const Servicos = () => {
 
   return (
     <section className="servicos">
-      <h2>Nossos Serviços</h2>
+      <h1>Nossos Serviços</h1>
       <div className="servicos-container">
         {services.map((service, index) => (
           <div key={index} className="servico-card">

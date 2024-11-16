@@ -1,35 +1,61 @@
 /* src/components/LandingPage/ApresentacaoPaises.css */
+
 .apresentacao-paises {
-    padding: 40px;
-  }
-  
-  .pais-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .pais-item.left .pais-avatar {
-    order: 1;
-  }
-  
-  .pais-item.left .pais-imagem {
-    order: 3;
-  }
-  
-  .pais-item.right .pais-avatar {
-    order: 3;
-  }
-  
-  .pais-avatar img, .pais-imagem {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-  }
-  
-  .pais-descricao {
-    margin: 0 20px;
-    flex: 1;
-  }
-  
+  padding: 40px;
+  background-color: #F5F5F5; /* Fundo bege claro */
+}
+
+.pais-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.pais-avatar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.pais-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+
+.pais-conteudo {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pais-descricao {
+  flex: 1;
+}
+
+.pais-descricao h3 {
+  color: #04066F; /* Azul escuro */
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.pais-descricao p {
+  font-size: 1.2rem;
+  color: #081469; /* Azul médio */
+  font-weight: bold;
+}
+
+.pais-imagem-container {
+  flex: 2;
+}
+
+.pais-imagem {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
