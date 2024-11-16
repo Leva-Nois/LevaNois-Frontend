@@ -3,15 +3,24 @@ import './Equipe.css';
 import GithubIcon from '../../../assets/icons/equipe-github.svg';
 import LinkedinIcon from '../../../assets/icons/equipe-linkedin.svg';
 
+// Importar as imagens dos membros da equipe
+import felipePhoto from '../../../assets/equipe/temp-felipe.jpg';
+import luizaPhoto from '../../../assets/equipe/temp-luiza.png';
+import wesleyPhoto from '../../../assets/equipe/temp-wesley.jpg';
+import lessandroPhoto from '../../../assets/equipe/temp-lessandro.jpg';
+import heitorPhoto from '../../../assets/equipe/temp-heitor.jpeg';
+import gustavoPhoto from '../../../assets/equipe/temp-gustavo.jpg';
+import emillyPhoto from '../../../assets/equipe/temp-emilly.jpg';
+
 const Equipe = () => {
   const membros = [
-    { nome: "Felipe Dias", cargo: "Product Owner e Desenvolvedor Back-End", foto: "path/to/felipe-photo.jpg", github: "https://github.com/AkashiAkz", linkedin: "https://www.linkedin.com/in/felipediaslima/" },
-    { nome: "Luiza Ramalho", cargo: "Scrum Master e Desenvolvedora Full Stack", foto: "path/to/luiza-photo.jpg", github: "https://github.com/LuizaRamalho", linkedin: "https://www.linkedin.com/in/luiza-souza-ramalho/" },
-    { nome: "Wesley da Silva", cargo: "Financeiro e Social Media", foto: "path/to/wesley-photo.jpg", github: "https://github.com/Wesley-Silva-32", linkedin: "https://www.linkedin.com/in/wesley-da-silva-rocha-a12201222/" },
-    { nome: "Lessandro", cargo: "Designer e Desenvolvedor Front-End", foto: "path/to/lessandro-photo.jpg", github: "https://github.com/sleeap", linkedin: "#" },
-    { nome: "Heitor Chagas", cargo: "Financeiro e Desenvolvedor Front-End", foto: "path/to/heitor-photo.jpg", github: "https://github.com/HeitoromaN", linkedin: "https://www.linkedin.com/in/heitor-chagas-feitosa/" },
-    { nome: "Gustavo Faustino", cargo: "Desenvolvedor Full Stack", foto: "path/to/gustavo-photo.jpg", github: "https://github.com/gustavfaustino", linkedin: "https://www.linkedin.com/in/gustavo-gabriel-4218b2250/" },
-    { nome: "Emilly Lourenço", cargo: "UX/UI Designer e Desenvolvedora Front-End", foto: "path/to/emilly-photo.jpg", github: "https://github.com/MIH005", linkedin: "https://www.linkedin.com/in/emillylouren%C3%A7o/" },
+    { nome: "Felipe Dias", cargo: "Product Owner e Desenvolvedor Back-End", foto: felipePhoto, github: "https://github.com/AkashiAkz", linkedin: "https://www.linkedin.com/in/felipediaslima/" },
+    { nome: "Luiza Ramalho", cargo: "Scrum Master e Desenvolvedora Full Stack", foto: luizaPhoto, github: "https://github.com/LuizaRamalho", linkedin: "https://www.linkedin.com/in/luiza-souza-ramalho/" },
+    { nome: "Wesley da Silva", cargo: "Financeiro e Social Media", foto: wesleyPhoto, github: "https://github.com/Wesley-Silva-32", linkedin: "https://www.linkedin.com/in/wesley-da-silva-rocha-a12201222/" },
+    { nome: "Lessandro", cargo: "Designer e Desenvolvedor Front-End", foto: lessandroPhoto, github: "https://github.com/sleeap", linkedin: "#" },
+    { nome: "Heitor Chagas", cargo: "Financeiro e Desenvolvedor Front-End", foto: heitorPhoto, github: "https://github.com/HeitoromaN", linkedin: "https://www.linkedin.com/in/heitor-chagas-feitosa/" },
+    { nome: "Gustavo Faustino", cargo: "Desenvolvedor Full Stack", foto: gustavoPhoto, github: "https://github.com/gustavfaustino", linkedin: "https://www.linkedin.com/in/gustavo-gabriel-4218b2250/" },
+    { nome: "Emilly Lourenço", cargo: "UX/UI Designer e Desenvolvedora Front-End", foto: emillyPhoto, github: "https://github.com/MIH005", linkedin: "https://www.linkedin.com/in/emillylouren%C3%A7o/" },
   ];
 
   return (
