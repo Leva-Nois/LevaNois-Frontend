@@ -1,12 +1,18 @@
-// src/components/LandingPage/CallToAction.jsx
-import React from 'react';
+import React from "react";
 import './CallToAction.css';
 
 const CallToAction = () => {
   return (
-    <section className="call-to-action">
-      <h2>Levando você para mais perto dos seus sonhos!</h2>
-      <button className="cta-button">Começar Jornada</button>
+    <section id="call-to-action">
+      <div className="cta-overlay">
+        <div className="cta-content">
+          <h1>Descubra o Mundo com a LevaNois!</h1>
+          <p>
+            Transforme seus sonhos em realidade. Explore novos países, aprenda culturas únicas e viva experiências inesquecíveis. O mundo está esperando por você!
+          </p>
+          <button className="cta-button">Inicie Sua Jornada Agora</button>
+        </div>
+      </div>
     </section>
   );
 };

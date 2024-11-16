@@ -1,0 +1,49 @@
+.feedback-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #FFB900;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    /* FE8401
+    FFB900 */
+  }
+  
+  .feedback-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .feedback-input,
+  .feedback-textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .feedback-textarea {
+    resize: none; /* Remove a possibilidade de arrastar */
+    height: 100px;
+  }
+  
+  .feedback-button {
+    background-color: #FE2B5C;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1.4rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .feedback-button:hover {
+    background-color: #d4264a;
+    transform: scale(1.05);
+  }

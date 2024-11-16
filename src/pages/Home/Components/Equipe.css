@@ -1,0 +1,42 @@
+.equipe-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #F5F5F5;
+  }
+  
+  .equipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .equipe-card {
+    background-color: #03A178;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .equipe-foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .equipe-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  

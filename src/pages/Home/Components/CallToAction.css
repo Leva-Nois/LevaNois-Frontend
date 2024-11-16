@@ -1,26 +1,54 @@
-/* src/components/LandingPage/CallToAction.css */
-.call-to-action {
-    background-color: #219EBC;
-    color: white;
-    text-align: center;
-    padding: 40px;
-    border-radius: 10px;
-    margin: 40px 20px;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    background-color: #FFB703;
-    border: none;
-    color: white;
-    font-size: 1.2em;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #fb8500;
-  }
-  
+#call-to-action {
+  position: relative;
+  height: 90vh; /* Quase tela inteira */
+  background-image: url('../../../assets/coa-background.png'); /* Imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.cta-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Sobreposição escura */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.cta-content h1 {
+  font-size: 4rem; /* Texto maior */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.cta-content p {
+  font-size: 1.5rem; /* Texto chamativo */
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.cta-button {
+  padding: 20px 40px; /* Botão maior */
+  font-size: 1.5rem; /* Texto grande no botão */
+  background-color: #FE2B5C; /* Cor de destaque */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #d4264a;
+  transform: scale(1.05); /* Leve aumento ao hover */
+}
