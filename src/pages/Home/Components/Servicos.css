@@ -1,0 +1,33 @@
+/* src/pages/Home/Servicos.css */
+.servicos {
+  padding: 40px;
+  text-align: center;
+  background-color: #FEF3E2;
+}
+
+.servicos-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.servico-card {
+  background-color: #04066F;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.servico-card h3 {
+  color: #FFB900;
+}
+
+.servico-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}

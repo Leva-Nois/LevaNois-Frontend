@@ -1,0 +1,31 @@
+/* src/components/LandingPage/PlanosAssinatura.css */
+.planos-assinatura {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .planos-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .plano-box {
+    background-color: #FFB703;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .plano-box h3 {
+    font-size: 1.5em;
+  }
+  
+  .plano-box p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  

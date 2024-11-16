@@ -1,0 +1,45 @@
+/* src/components/LandingPage/BannerInicial.css */
+.banner {
+  background-image: url('../../../assets/background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15rem;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.banner-avatar {
+  width: 320px;
+  border-radius: 50%;
+  margin-right: 30rem; /* Added margin to create space */
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slogan-image {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.banner-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #bb2f4d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+

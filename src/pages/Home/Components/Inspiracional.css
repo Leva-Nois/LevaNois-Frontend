@@ -1,0 +1,17 @@
+/* src/components/LandingPage/Inspiracional.css */
+.inspiracional {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .inspiracional-text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .inspiracional-image {
+    width: 300px;
+    border-radius: 10px;
+  }
+  

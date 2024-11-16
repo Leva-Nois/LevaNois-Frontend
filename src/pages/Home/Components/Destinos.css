@@ -1,0 +1,17 @@
+/* src/components/LandingPage/Destinos.css */
+.destinos {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .destinos-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .destino-item {
+    font-size: 1.5em;
+    color: #023047;
+  }
+  

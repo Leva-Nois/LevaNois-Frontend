@@ -1,0 +1,35 @@
+/* src/components/LandingPage/ApresentacaoPaises.css */
+.apresentacao-paises {
+    padding: 40px;
+  }
+  
+  .pais-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .pais-item.left .pais-avatar {
+    order: 1;
+  }
+  
+  .pais-item.left .pais-imagem {
+    order: 3;
+  }
+  
+  .pais-item.right .pais-avatar {
+    order: 3;
+  }
+  
+  .pais-avatar img, .pais-imagem {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .pais-descricao {
+    margin: 0 20px;
+    flex: 1;
+  }
+  

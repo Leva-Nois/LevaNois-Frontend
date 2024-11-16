@@ -23,7 +23,7 @@ const Footer = () => {
               <img src={InstagramIcon} className="social-icon" alt="Instagram da Leva Nóis" />
             </a>
           </div>
-          <p className="contact-email">Contato: leva_nois@outlook.com</p>
+          <p className="contact-email" >Contato: <a href='mailto:leva_nois@outlook.com'>leva_nois@outlook.com</a></p>
         </div>
         
         <div className="footer-right">
