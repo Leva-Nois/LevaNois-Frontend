@@ -21,6 +21,7 @@ const LandingPage = () => {
       <Inspiracional />
       <Servicos/>
       <ApresentacaoPaises />
+      <Avaliacoes />
       <Footer/>
     </div>
   );
