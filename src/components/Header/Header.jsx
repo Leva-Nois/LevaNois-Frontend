@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../assets/miniLogo.svg";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import cadastro from "../../pages/Home/Cadastro";
 
 const Header = () => {
   return (
