@@ -8,9 +8,9 @@ const BannerInicial = () => {
   return (
     <section className="banner">
       <div className="banner-content">
-        <img src={Avatar} alt="Avatar" className="banner-avatar" />
+        <img src={Avatar} alt="Avatar da Leva Nóis" className="banner-avatar" />
         <div className="banner-text">
-          <img src={Slogan} alt="Slogan da LevaNois" className="slogan-image" />
+          <img src={Slogan} alt="Slogan da Leva Nóis: Levando você para mais perto dos seus sonhos" className="slogan-image" />
           <button className="banner-button">Conheça Mais</button>
         </div>
       </div>
