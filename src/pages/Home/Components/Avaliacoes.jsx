@@ -21,20 +21,28 @@ const Avaliacoes = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 3) % avaliacoes.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % avaliacoes.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 3 + avaliacoes.length) % avaliacoes.length);
+    setCurrentIndex((prevIndex) => 
+      (prevIndex - 1 + avaliacoes.length) % avaliacoes.length
+    );
   };
 
-  const currentAvaliacoes = avaliacoes.slice(currentIndex, currentIndex + 3);
+  const getDisplayedAvaliacoes = () => {
+    const displayed = [];
+    for (let i = 0; i < 3; i++) {
+      displayed.push(avaliacoes[(currentIndex + i) % avaliacoes.length]);
+    }
+    return displayed;
+  };
 
   return (
     <section className="avaliacoes">
       <h2>Depoimentos</h2>
       <div className="avaliacoes-container">
-        {currentAvaliacoes.map((aval, index) => (
+        {getDisplayedAvaliacoes().map((aval, index) => (
           <div key={index} className="avaliacao-item">
             <img src={aval.foto} alt={aval.nome} className="avaliacao-foto" />
             <p>"{aval.comentario}"</p>
