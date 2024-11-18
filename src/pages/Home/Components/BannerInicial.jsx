@@ -6,7 +6,7 @@ import './BannerInicial.css';
 
 const BannerInicial = () => {
   return (
-    <section id="top" className="banner">
+    <section className="banner">
       <div className="banner-content">
         <img src={Avatar} alt="Avatar da Leva Nóis" className="banner-avatar" />
         <div className="banner-text">
