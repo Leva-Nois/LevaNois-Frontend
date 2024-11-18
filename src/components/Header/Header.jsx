@@ -2,7 +2,6 @@ import React from "react";
 import Logo from "../../assets/miniLogo.svg";
 import "./Header.css";
 import { Link } from "react-router-dom";
-
 const Header = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -31,7 +30,7 @@ const Header = () => {
           </span>
         </li>
         <li id="list-item">
-          <a href="/comeco" id="list-botao-jornada">
+          <a href="login" id="list-botao-jornada">
             Começar Jornada
           </a>
         </li>
