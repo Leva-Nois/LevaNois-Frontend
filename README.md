@@ -1,7 +1,7 @@
 # 🌍✨ LevaNois ✈️💼  
 
 <div align="center">
-  <img width="100%" src="https://via.placeholder.com/1200x600?text=LevaNois+-+Transformando+Sonhos+em+Realidade" alt="Logo do LevaNois" />
+  <img width="100%" src="./src/assets/sloganBack.png" alt="Logo do LevaNois" />
 </div>
 
 ---
