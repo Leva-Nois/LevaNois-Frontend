@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# 🌍✨ LevaNois ✈️💼  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img width="100%" src="https://via.placeholder.com/1200x600?text=LevaNois+-+Transformando+Sonhos+em+Realidade" alt="Logo do LevaNois" />
+</div>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📖 Sobre nós
 
-### `npm start`
+**LevaNois** é uma plataforma feita para **conectar jovens de comunidades periféricas a oportunidades de intercâmbio internacional** e viagens culturais.  
+Nosso objetivo é **romper barreiras socioeconômicas**, incentivando o aprendizado, a organização financeira e a inclusão cultural.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🎯 **Missão:** Tornar o sonho de explorar o mundo acessível para todos.  
+🌟 **Visão:** Ser a principal referência em planejamento de intercâmbio para jovens da periferia.  
+💡 **Valores:** Inclusão, empoderamento e sustentabilidade.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 👩‍💻 Nossa equipe
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contamos com um time dedicado e apaixonado que uniu habilidades para criar o LevaNois:  
 
-### `npm run build`
+- 👨‍💼 [Felipe Dias](https://www.linkedin.com/in/felipediaslima/): Product Owner (PO) e Desenvolvedor Back-end
+- 🧑‍⚖️ [Luiza Ramalho](https://www.linkedin.com/in/luiza-souza-ramalho/): Scrum Master e Desenvolvedora Full Stack
+- 🤝 [Lessandro](https://github.com/sleeap): Designer e Desenvolvedor Front-end  
+- 📝 [Wesley da Silva](https://www.linkedin.com/in/wesley-da-silva-rocha-a12201222/): Financeiro e Social Media  
+- 🛠️ [Heitor Chagas](https://www.linkedin.com/in/heitor-chagas-feitosa/): Financeiro e Desenvolvedor Full Stack 
+- 🎮 [Gustavo Faustino](https://www.linkedin.com/in/gustavogfoliveira/): Desenvolvedor Full Stack
+- 🎨 [Emilly Lourenço](https://www.linkedin.com/in/emillylouren%C3%A7o/): UX/UI Designer e Desenvolvedora Front-end
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Tecnologias utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para proporcionar uma experiência única e inclusiva, utilizamos as melhores ferramentas:
 
-### `npm run eject`
+- ⚛️ **React.js**: Desenvolvimento da interface.  
+- 🎨 **CSS**: Estilização e design moderno.  
+- 🛠️ **Figma**: Criação de protótipos e identidade visual.  
+- 🤟 **VLibras**: Acessibilidade para surdos.  
+- 🌐 **Netlify**: Hospedagem da plataforma - [LevaNois](https://levanois.netlify.app).  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔗 Redes sociais e ferramentas do projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Conecte-se com o LevaNois e com o time para saber mais:  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 📸 [Instagram](https://www.instagram.com/leva.nois/)  
+- 💼 [LinkedIn](https://www.linkedin.com/company/leva-nois/)  
+- 💬 **Discord**  
+- 📋 **Trello** 
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎯 Próximos passos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Nosso foco para o futuro:
 
-### Code Splitting
+- 🌍 Adicionar mais destinos culturais e linguísticos.  
+- 🧑‍🏫 Criar um sistema de mentoria para guiar os jovens.  
+- 🤖 Usar inteligência artificial para personalizar planejamento financeiro.  
+- ♿ Expandir ferramentas de acessibilidade e inclusão.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 💜 Agradecimentos especiais
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Este projeto foi possível graças ao apoio e incentivo de muitas pessoas e organizações incríveis:  
 
-### Making a Progressive Web App
+- 👩‍🏫 **Gabriel, Júlio, Débora e Aurora**: Professores inspiradores do **PROA** que nos guiaram durante toda a jornada.  
+- 🌟 **Liliane**: Nossa mentora, que sempre acreditou no nosso potencial.  
+- 🕊️ **Rô**: Em sua memória, continuamos movidos por sua força e legado.  
+- 🎓 **PROA**: Instituição que proporcionou a base para que o LevaNois fosse criado, oferecendo conhecimento, estrutura e motivação para crescermos juntos.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Agradecemos também às comunidades e parceiros que acreditam no potencial transformador do LevaNois.  
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  ✨ **LevaNois - Levando você para mais perto dos seus sonhos.** ✨  
+</div>
