@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/miniLogo.svg";
 import "./Header.css";
-import { Link } from "react-router-dom";
+
 const Header = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -15,7 +15,7 @@ const Header = () => {
       <img src={Logo} alt="Logo da Leva Nóis" />
       <nav id="list">
         <li id="list-item">
-          <span id="item-link" onClick={() => scrollToSection("top")}>
+          <span id="item-link" onClick={() => scrollToSection("banner")}>
             Início
           </span>
         </li>
