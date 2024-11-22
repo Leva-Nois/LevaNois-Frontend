@@ -1,57 +1,106 @@
-import React, { useState } from "react";
-import "./cadastro.css"; // Substitua pelo arquivo CSS correto
+import React, { useState, useEffect, useRef } from "react";
+import "./cadastro.css";
 
-const App = () => {
-  const [isRightPanelActive, setIsRightPanelActive] = useState(false);
+const Cadastro = () => {
+  const [isLoginActive, setIsLoginActive] = useState(true);
+  const contFormsRef = useRef(null);
+  const formLoginRef = useRef(null);
+  const formSignUpRef = useRef(null);
+
+  useEffect(() => {
+    if (contFormsRef.current && formLoginRef.current && formSignUpRef.current) {
+      if (isLoginActive) {
+        contFormsRef.current.classList.add("cont_forms_active_login");
+        contFormsRef.current.classList.remove("cont_forms_active_sign_up");
+        formLoginRef.current.style.display = "block";
+        formSignUpRef.current.style.opacity = "0";
+
+        setTimeout(() => {
+          formLoginRef.current.style.opacity = "1";
+        }, 400);
+
+        setTimeout(() => {
+          formSignUpRef.current.style.display = "none";
+        }, 200);
+      } else {
+        contFormsRef.current.classList.add("cont_forms_active_sign_up");
+        contFormsRef.current.classList.remove("cont_forms_active_login");
+        formSignUpRef.current.style.display = "block";
+        formLoginRef.current.style.opacity = "0";
+
+        setTimeout(() => {
+          formSignUpRef.current.style.opacity = "1";
+        }, 100);
+
+        setTimeout(() => {
+          formLoginRef.current.style.display = "none";
+        }, 400);
+      }
+    }
+  }, [isLoginActive]);
+
+  const hideLoginAndSignUp = () => {
+    if (contFormsRef.current && formLoginRef.current && formSignUpRef.current) {
+      contFormsRef.current.classList.remove("cont_forms_active_login", "cont_forms_active_sign_up");
+      formSignUpRef.current.style.opacity = "0";
+      formLoginRef.current.style.opacity = "0";
+
+      setTimeout(() => {
+        formSignUpRef.current.style.display = "none";
+        formLoginRef.current.style.display = "none";
+      }, 500);
+    }
+  };
 
   return (
-    <div>
-      <h2>Login/Cadastre-se</h2>
-      <div
-        className={`container ${isRightPanelActive ? "right-panel-active" : ""}`}
-        id="container"
-      >
-        <div className="form-container sign-up-container">
-          <form action="#">
-            <h1>Crie sua conta</h1>
-            <span></span>
-            <input type="text" placeholder="Nome" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Senha" />
-            <button type="button">Cadastrar</button>
-          </form>
-        </div>
-        <div className="form-container sign-in-container">
-          <form action="#">
-            <h1>Entrar</h1>
-            <span>Bem-vindo de volta</span>
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Senha" />
-            <a href="#">Esqueceu a senha?</a>
-            <button type="button">Entrar</button>
-          </form>
-        </div>
-        <div className="overlay-container">
-          <div className="overlay">
-            <div className="overlay-panel overlay-left">
-              <h1>Bem-vindo(a) de volta!</h1>
-              <p>Sentimos sua falta</p>
-              <button
-                className="ghost"
-                onClick={() => setIsRightPanelActive(false)}
-              >
-                Entrar
-              </button>
-            </div>
-            <div className="overlay-panel overlay-right">
-              <h1>Olá, amigo(a)!</h1>
-              <p>Crie sua conta para continuar nesse grande sonho na LevaNois</p>
-              <button
-                className="ghost"
-                onClick={() => setIsRightPanelActive(true)}
-              >
-                Inscreva-se
-              </button>
+    <div className="cadastro">
+      <div className="cont_backgroudgray">
+        <div className="cotn_principal">
+          <div className="cont_centrar">
+            <div className="cont_login">
+              <div className="cont_info_log_sign_up">
+                <div className="col_md_login">
+                  <div className="cont_ba_opcitiy">
+                    <h2>ENTRAR</h2>
+                    <p>Bem-Vindo(a) de volta viajante</p>
+                    <button className="btn_login" onClick={() => setIsLoginActive(true)}>LOGIN</button>
+                  </div>
+                </div>
+                <div className="col_md_sign_up">
+                  <div className="cont_ba_opcitiy">
+                    <h2>Inscreva-se</h2>
+                    <p>Olá, é um prazer te-lo aqui. Seja muito bem-vindo</p>
+                    <button className="btn_sign_up" onClick={() => setIsLoginActive(false)}>SIGN UP</button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="cont_back_info">
+                <div className="cont_img_back_grey">
+
+                </div>
+              </div>
+              <div className="cont_forms" ref={contFormsRef}>
+                <div className="cont_img_back_">
+
+                </div>
+                <div className="cont_form_login" ref={formLoginRef}>
+                  <a href="#" onClick={hideLoginAndSignUp}><i className="material-icons">&#xE5C4;</i></a>
+                  <h2>LOGIN</h2>
+                  <input type="text" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button className="btn_login" type="submit">LOGIN</button>
+                </div>
+                <div className="cont_form_sign_up" ref={formSignUpRef}>
+                  <a href="#" onClick={hideLoginAndSignUp}><i className="material-icons">&#xE5C4;</i></a>
+                  <h2>SIGN UP</h2>
+                  <input type="email" placeholder="Email" />
+                  <input type="text" placeholder="User" />
+                  <input type="password" placeholder="Password" />
+                  <input type="password" placeholder="Confirm Password" />
+                  <button className="btn_sign_up" type="submit">SIGN UP</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -60,4 +109,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Cadastro;
