@@ -4,3 +4,11 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #F1F1F1;
 }
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
