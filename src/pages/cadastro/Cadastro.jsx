@@ -61,44 +61,46 @@ const Cadastro = () => {
               <div className="cont_info_log_sign_up">
                 <div className="col_md_login">
                   <div className="cont_ba_opcitiy">
-                    <h2>ENTRAR</h2>
-                    <p>Bem-Vindo(a) de volta viajante</p>
-                    <button className="btn_login" onClick={() => setIsLoginActive(true)}>LOGIN</button>
+                    <h2>Entrar</h2>
+                    <p>Bem-vindo(a) de volta! Acesse sua conta para continuar.</p>
+                    <button className="btn_login" onClick={() => setIsLoginActive(true)}>Login</button>
                   </div>
                 </div>
                 <div className="col_md_sign_up">
                   <div className="cont_ba_opcitiy">
-                    <h2>Inscreva-se</h2>
-                    <p>Olá, é um prazer te-lo aqui. Seja muito bem-vindo</p>
-                    <button className="btn_sign_up" onClick={() => setIsLoginActive(false)}>SIGN UP</button>
+                    <h2>Criar Conta</h2>
+                    <p>É novo por aqui? Cadastre-se e embarque em sua jornada!</p>
+                    <button className="btn_sign_up" onClick={() => setIsLoginActive(false)}>Cadastro</button>
                   </div>
                 </div>
               </div>
 
               <div className="cont_back_info">
-                <div className="cont_img_back_grey">
-
-                </div>
+                <div className="cont_img_back_grey"></div>
               </div>
               <div className="cont_forms" ref={contFormsRef}>
-                <div className="cont_img_back_">
-
-                </div>
+                <div className="cont_img_back_"></div>
                 <div className="cont_form_login" ref={formLoginRef}>
-                  <a href="#" onClick={hideLoginAndSignUp}><i className="material-icons">&#xE5C4;</i></a>
-                  <h2>LOGIN</h2>
-                  <input type="text" placeholder="Email" />
-                  <input type="password" placeholder="Password" />
-                  <button className="btn_login" type="submit">LOGIN</button>
+                  <a href="#" onClick={hideLoginAndSignUp}>
+                    <i className="material-icons">&#xE5C4;</i>
+                  </a>
+                  <h2>Login</h2>
+                  <input type="text" placeholder="E-mail" />
+                  <input type="password" placeholder="Senha" />
+                  <button className="btn_login" type="submit">Entrar</button>
                 </div>
                 <div className="cont_form_sign_up" ref={formSignUpRef}>
-                  <a href="#" onClick={hideLoginAndSignUp}><i className="material-icons">&#xE5C4;</i></a>
-                  <h2>SIGN UP</h2>
-                  <input type="email" placeholder="Email" />
-                  <input type="text" placeholder="User" />
-                  <input type="password" placeholder="Password" />
-                  <input type="password" placeholder="Confirm Password" />
-                  <button className="btn_sign_up" type="submit">SIGN UP</button>
+                  <a href="#" onClick={hideLoginAndSignUp}>
+                    <i className="material-icons">&#xE5C4;</i>
+                  </a>
+                  <h2>Cadastro</h2>
+                  <input type="text" placeholder="Nome Completo" />
+                  <input type="email" placeholder="E-mail" />
+                  <input type="date" placeholder="Data de Nascimento" />
+                  <input type="text" placeholder="País de Interesse" />
+                  <input type="password" placeholder="Senha" />
+                  <input type="password" placeholder="Confirmar Senha" />
+                  <button className="btn_sign_up" type="submit">Cadastrar</button>
                 </div>
               </div>
             </div>

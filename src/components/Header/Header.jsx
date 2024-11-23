@@ -30,7 +30,7 @@ const Header = () => {
           </span>
         </li>
         <li id="list-item">
-          <a href="login" id="list-botao-jornada">
+          <a href="/login" id="list-botao-jornada">
             Começar Jornada
           </a>
         </li>
