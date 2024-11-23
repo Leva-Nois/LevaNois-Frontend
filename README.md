@@ -4,6 +4,7 @@
   <img width="100%" src="./src/assets/sloganBack.png" alt="Logo do LevaNois" />
 </div>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b48f9416-a1b1-4225-9c95-01a93c9cc651/deploy-status)](https://app.netlify.com/sites/levanois/deploys)
 ---
 
 ## 📖 Sobre nós
