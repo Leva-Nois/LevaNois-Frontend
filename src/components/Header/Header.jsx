@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header id="header-section">
-      <img src={Logo} alt="Logo da Leva Nóis" />
+      <img id="logo" src={Logo} alt="Logo da Leva Nóis" />
       <nav id="list">
         <li id="list-item">
           <span id="item-link" onClick={() => scrollToSection("banner")}>
