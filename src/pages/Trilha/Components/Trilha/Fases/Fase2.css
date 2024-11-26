@@ -1,0 +1,58 @@
+.fase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welcome-screen, .salary-screen, .work-screen, .work-details-screen, .completed-screen, .household-work-screen {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-screen p, .salary-screen p, .work-screen p, .work-details-screen p, .completed-screen p, .household-work-screen p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .next-button, .salary-button, .work-button, .submit-button, .next-level-button, .add-button, .continue-button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .next-button:hover, .salary-button:hover, .work-button:hover, .submit-button:hover, .next-level-button:hover, .add-button:hover, .continue-button:hover {
+    background: #0056b3;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

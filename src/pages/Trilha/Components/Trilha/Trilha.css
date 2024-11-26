@@ -1,3 +1,4 @@
+/* Contêiner principal da trilha */
 .trail-container {
   padding-left: 1rem;
   display: flex;
@@ -5,10 +6,28 @@
   align-items: center;
 }
 
+/* Seção da trilha */
 .trail-section {
   margin-bottom: 40px;
+  width: 100%;
 }
 
+.trail-section.locked {
+  opacity: 0.6;
+  position: relative;
+}
+
+.trail-section.locked:after {
+  content: "🔒";
+  font-size: 50px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Cabeçalho da seção */
 .section-header {
   text-align: center;
   margin-bottom: 20px;
@@ -28,12 +47,19 @@
   font-size: 14px;
 }
 
+/* Contêiner de níveis */
 .section-levels {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.level-container {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Botões de níveis */
 .level-button {
   width: 60px;
   height: 60px;
@@ -44,8 +70,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
   cursor: pointer;
+  border: none;
 }
 
 .level-button.unlocked {
@@ -59,21 +86,23 @@
   cursor: not-allowed;
 }
 
-.level-button .star {
-  margin-right: 5px;
+/* Botão de redirecionamento */
+.redirect-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.trail-section.locked {
-  opacity: 0.6;
-  position: relative;
+.redirect-button:hover {
+  background-color: #21867a;
 }
 
-.trail-section.locked:after {
-  content: "🔒";
-  font-size: 50px;
-  color: #333;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.redirect-button:active {
+  background-color: #176b5f;
 }
