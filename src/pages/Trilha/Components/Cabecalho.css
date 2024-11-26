@@ -1,0 +1,40 @@
+.header {
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    align-items: center;
+  }
+  
+  .country-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flag {
+    width: 45px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+  }
+  
+  .next-country {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #ffb703;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .next-country:hover {
+    transform: scale(1.2);
+  }
+  
+  .country-name {
+    color: black;
+    font-weight: bold;
+  }
+  
