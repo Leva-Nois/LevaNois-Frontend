@@ -25,7 +25,7 @@ Contamos com um time dedicado e apaixonado que uniu habilidades para criar o Lev
 - 👨‍💼 [Felipe Dias](https://www.linkedin.com/in/felipediaslima/): Product Owner (PO) e Desenvolvedor Back-end
 - 🧑‍⚖️ [Luiza Ramalho](https://www.linkedin.com/in/luiza-souza-ramalho/): Scrum Master e Desenvolvedora Full Stack
 - 🤝 [Lessandro](https://github.com/sleeap): Designer e Desenvolvedor Front-end  
-- 📝 [Wesley da Silva](https://www.linkedin.com/in/wesley-da-silva-rocha-a12201222/): Financeiro e Social Media  
+- 📝 [Wesley da Silva](https://www.linkedin.com/in/wesley-da-silva-rocha-a12201222/): Financeiro, Social Media e Banco de Dados
 - 🛠️ [Heitor Chagas](https://www.linkedin.com/in/heitor-chagas-feitosa/): Financeiro e Desenvolvedor Full Stack 
 - 🎮 [Gustavo Faustino](https://www.linkedin.com/in/gustavogfoliveira/): Desenvolvedor Full Stack
 - 🎨 [Emilly Lourenço](https://www.linkedin.com/in/emillylouren%C3%A7o/): UX/UI Designer e Desenvolvedora Front-end
