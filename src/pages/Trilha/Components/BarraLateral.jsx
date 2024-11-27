@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./BarraLateral.css";
 import { MdHomeFilled } from "react-icons/md";
 import { FaBookBookmark, FaMoneyBillTransfer, FaUser } from "react-icons/fa6";
@@ -26,7 +27,9 @@ const BarraLateral = () => {
           <i className="icon"><FaBookBookmark /></i> Aprender
         </li>
         <li>
-          <i className="icon"><RiLightbulbFlashFill /></i> Leva Dica
+          <Link to="/trilha/Dicas" className="menu-link">
+            <i className="icon"><RiLightbulbFlashFill /></i> Leva Dica
+          </Link>
         </li>
         <li>
           <i className="icon"><FaUser /></i> Perfil

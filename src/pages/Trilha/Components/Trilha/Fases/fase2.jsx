@@ -21,12 +21,11 @@ const Fase2 = () => {
   };
 
   const handleSalaryClick = (salaryRange) => {
-    console.log(`Salário selecionado: ${salaryRange}`);
+    setSalary(salaryRange);
     setScreen('work');
   };
 
   const handleWorkClick = (answer) => {
-    console.log(`Trabalha: ${answer}`);
     if (answer === 'Sim') {
       setScreen('workDetails');
     } else if (answer === 'Não') {
@@ -45,12 +44,10 @@ const Fase2 = () => {
   };
 
   const handleSubmitFamilyDetails = () => {
-    console.log('Family Members:', familyMembers);
     setScreen('completed');
   };
 
   const handleSubmit = () => {
-    console.log(`Profissão: ${profession}, Cargo: ${position}, Salário: ${salary}`);
     setScreen('completed');
   };
 
@@ -60,10 +57,15 @@ const Fase2 = () => {
 
   return (
     <div className="fase-container">
+      <div className="progress-bar">
+        <div className="progress" style={{ width: screen === 'welcome' ? '0%' : screen === 'salary' ? '20%' : screen === 'work' ? '40%' : screen === 'workDetails' ? '60%' : screen === 'familyDetails' ? '80%' : '100%' }}></div>
+      </div>
+
       {screen === 'welcome' && (
         <div className="welcome-screen">
-          <p>Bem Vindo ao nível 2! Neste nível vamos entender melhor sobre sua renda</p>
-          <button className="next-button" onClick={handleNextClick}>
+          <h2>Bem Vindo ao nível 2!</h2>
+          <p>Neste nível vamos entender melhor sobre sua renda</p>
+          <button className="large-button" onClick={handleNextClick}>
             Próximo
           </button>
         </div>
@@ -71,6 +73,7 @@ const Fase2 = () => {
 
       {screen === 'salary' && (
         <div className="salary-screen">
+          <h2>Informe sua renda</h2>
           <p>Nos informe seu salário:</p>
           <div className="button-group">
             <button className="salary-button" onClick={() => handleSalaryClick('1 a 2 salários mínimos')}>
@@ -88,7 +91,8 @@ const Fase2 = () => {
 
       {screen === 'work' && (
         <div className="work-screen">
-          <p>Você trabalha?</p>
+          <h2>Você trabalha?</h2>
+          <p>Selecione uma opção abaixo:</p>
           <div className="button-group">
             <button className="work-button" onClick={() => handleWorkClick('Sim')}>
               Sim
@@ -102,6 +106,7 @@ const Fase2 = () => {
 
       {screen === 'workDetails' && (
         <div className="work-details-screen">
+          <h2>Detalhes do seu trabalho</h2>
           <p>Você trabalha com o que?</p>
           <div className="input-group">
             <label htmlFor="profession">Profissão</label>
@@ -130,7 +135,7 @@ const Fase2 = () => {
               onChange={(e) => setSalary(e.target.value)}
             />
           </div>
-          <button className="submit-button" onClick={handleSubmit}>
+          <button className="large-button" onClick={handleSubmit}>
             Enviar
           </button>
         </div>
@@ -138,6 +143,7 @@ const Fase2 = () => {
 
       {screen === 'familyDetails' && (
         <div className="family-details-screen">
+          <h2>Detalhes da família</h2>
           <p>Informe quem da sua casa trabalha, com o que trabalha, quanto ganha.</p>
           <div className="input-group">
             <label htmlFor="name">Nome</label>
@@ -178,7 +184,7 @@ const Fase2 = () => {
           <button className="add-button" onClick={handleAddFamilyMember}>
             Adicionar
           </button>
-          <button className="continue-button" onClick={handleSubmitFamilyDetails}>
+          <button className="large-button" onClick={handleSubmitFamilyDetails}>
             Continuar
           </button>
         </div>
@@ -186,12 +192,9 @@ const Fase2 = () => {
 
       {screen === 'completed' && (
         <div className="completed-screen">
-          <p>
-            Parabéns! Você conseguiu concluir o nível 2, graças a isso temos as
-            informações que precisávamos quanto à sua renda. Clique no botão "Próximo nível"
-            para avançar para o nível 3.
-          </p>
-          <button className="next-level-button" onClick={handleNextLevel}>
+          <h2>Parabéns!</h2>
+          <p>Você conseguiu concluir o nível 2, graças a isso temos as informações que precisávamos quanto à sua renda.</p>
+          <button className="large-button" onClick={handleNextLevel}>
             Próximo nível
           </button>
         </div>
