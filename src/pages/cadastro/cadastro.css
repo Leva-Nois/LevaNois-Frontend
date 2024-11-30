@@ -173,6 +173,10 @@
 	transition: all 0.5s;
   }
   
+  .cadastro .cont_form_login h2 {
+	font-family: 'Poppins', sans-serif;
+}
+
   .cadastro .cont_forms_active_login {
 	z-index: 2;
   }

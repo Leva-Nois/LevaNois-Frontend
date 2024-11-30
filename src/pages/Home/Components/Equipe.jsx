@@ -17,7 +17,7 @@ const Equipe = () => {
     { nome: "Felipe Dias", cargo: "Product Owner e Desenvolvedor Back-End", foto: felipePhoto, github: "https://github.com/AkashiAkz", linkedin: "https://www.linkedin.com/in/felipediaslima/" },
     { nome: "Luiza Ramalho", cargo: "Scrum Master e Desenvolvedora Full Stack", foto: luizaPhoto, github: "https://github.com/LuizaRamalho", linkedin: "https://www.linkedin.com/in/luiza-souza-ramalho/" },
     { nome: "Wesley da Silva", cargo: "Financeiro e Social Media", foto: wesleyPhoto, github: "https://github.com/Wesley-Silva-32", linkedin: "https://www.linkedin.com/in/wesley-da-silva-rocha-a12201222/" },
-    { nome: "Lessandro", cargo: "Designer e Desenvolvedor Front-End", foto: lessandroPhoto, github: "https://github.com/sleeap", linkedin: "#" },
+    { nome: "Lessandro Figueredo", cargo: "Designer e Desenvolvedor Front-End", foto: lessandroPhoto, github: "https://github.com/sleeap", linkedin: "#" },
     { nome: "Heitor Chagas", cargo: "Financeiro e Desenvolvedor Front-End", foto: heitorPhoto, github: "https://github.com/HeitoromaN", linkedin: "https://www.linkedin.com/in/heitor-chagas-feitosa/" },
     { nome: "Gustavo Faustino", cargo: "Desenvolvedor Full Stack", foto: gustavoPhoto, github: "https://github.com/gustavfaustino", linkedin: "https://www.linkedin.com/in/gustavo-gabriel-4218b2250/" },
     { nome: "Emilly Lourenço", cargo: "UX/UI Designer e Desenvolvedora Front-End", foto: emillyPhoto, github: "https://github.com/MIH005", linkedin: "https://www.linkedin.com/in/emillylouren%C3%A7o/" },

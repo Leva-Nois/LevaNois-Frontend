@@ -68,7 +68,7 @@
                   </div>
                   <div className="col_md_sign_up">
                     <div className="cont_ba_opcitiy">
-                      <h2>Criar Conta</h2>
+                      <h2><b>Criar Conta</b></h2>
                       <p>É novo por aqui? Cadastre-se e embarque em sua jornada!</p>
                       <button className="btn_sign_up" onClick={() => setIsLoginActive(false)}>Cadastro</button>
                     </div>
@@ -84,7 +84,7 @@
                     <a href="#" onClick={hideLoginAndSignUp}>
                       <i className="material-icons">&#xE5C4;</i>
                     </a>
-                    <h2>Login</h2>
+                    <h2><b>Login</b></h2>
                     <input type="text" placeholder="E-mail" />
                     <input type="password" placeholder="Senha" />
                     <button className="btn_login" type="submit">Entrar</button>
