@@ -1,0 +1,118 @@
+/* Importando a fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Container Principal */
+.fase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh; /* Para preencher a altura total da tela */
+}
+
+/* Barra de Progresso */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #009dc8;
+  transition: width 0.3s ease;
+}
+
+/* Estilo dos Blocos */
+.welcome-screen,
+.question-screen,
+.completed-screen,
+.update-screen {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Para espaço entre os blocos */
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Grupo de Botões */
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.large-button {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  color: #009dc8;
+  border: 2px solid #009dc8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.large-button:hover {
+  background-color: #009dc8;
+  color: white;
+}
+
+.next-level-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #009dc8;
+  color: white;
+  border: 2px solid #009dc8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.next-level-button:hover {
+  background-color: #007bb5;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  color: #009dc8;
+  text-decoration: none;
+  border: 2px solid #009dc8;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #009dc8;
+  color: white;
+}
