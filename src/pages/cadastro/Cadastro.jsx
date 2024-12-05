@@ -61,7 +61,7 @@
                 <div className="cont_info_log_sign_up">
                   <div className="col_md_login">
                     <div className="cont_ba_opcitiy">
-                      <h2>Entrar</h2>
+                      <h2><b>Entrar</b></h2>
                       <p>Bem-vindo(a) de volta! Acesse sua conta para continuar.</p>
                       <button className="btn_login" onClick={() => setIsLoginActive(true)}>Login</button>
                     </div>
@@ -93,7 +93,7 @@
                     <a href="#" onClick={hideLoginAndSignUp}>
                       <i className="material-icons">&#xE5C4;</i>
                     </a>
-                    <h2>Cadastro</h2>
+                    <h2><b>Cadastro</b></h2>
                     <input type="text" placeholder="Nome Completo" />
                     <input type="email" placeholder="E-mail" />
                     <input type="date" placeholder="Data de Nascimento" />

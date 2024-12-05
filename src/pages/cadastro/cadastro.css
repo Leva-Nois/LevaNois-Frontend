@@ -12,7 +12,6 @@
 	height: 100%;
 	background: url("./images/coa-background.jpg");
 	background-size: cover;
-
   }
   
   .cadastro .cont_centrar {
@@ -32,8 +31,9 @@
 	width: 640px;
 	height: 280px;
 	overflow: hidden;
-	background-color: #fff;
+	background-color: #ffaeae;
 	box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
   }
   
   .cadastro .cont_forms {
@@ -45,6 +45,7 @@
 	height: 280px;
 	background-color: #e1edff;
 	transition: all 0.5s;
+	border-radius: 30px;
   }
   
   .cadastro .cont_forms_active_login {
@@ -133,9 +134,9 @@
   /* Background text */
   .cadastro .cont_ba_opcitiy {
 	position: relative;
-	background-color: rgba(0, 0, 0, 0.55);
+	background-color: rgba(114, 16, 16, 0.404);
 	width: 80%;
-	border-radius: 3px;
+	border-radius: 5px;
 	margin-top: 60px;
 	padding: 15px 0;
   }

@@ -11,7 +11,7 @@ const BarraLateral = () => {
     <div className="sidebar">
       <div className="profile">
         <img
-          src="https://via.placeholder.com/80"
+          src="https://tse3.mm.bing.net/th?id=OIG3.8bdhoM3_FeuT_BMrXRcm&pid=ImgGn"
           alt="Foto do Usuário"
           className="profile-picture"
         />
