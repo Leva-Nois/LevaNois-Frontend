@@ -5,14 +5,14 @@ import LinkedinIcon from '../../../assets/icons/equipe-linkedin.svg';
 
 // Importar as imagens dos membros da equipe
 import felipePhoto from '../../../assets/equipe/temp-felipe.jpg';
-import luizaPhoto from '../../../assets/equipe/temp-luiza.png';
+import luizaPhoto from '../../../assets/equipe/temp-luiza.jpg';
 import wesleyPhoto from '../../../assets/equipe/temp-wesley.jpg';
 import lessandroPhoto from '../../../assets/equipe/temp-lessandro.jpg';
-import heitorPhoto from '../../../assets/equipe/temp-heitor.jpeg';
+import heitorPhoto from '../../../assets/equipe/temp-heitor.jpg';
 import gustavoPhoto from '../../../assets/equipe/temp-gustavo.jpg';
 import emillyPhoto from '../../../assets/equipe/temp-emilly.jpg';
 
-const Equipe = () => {
+const Equipe = () => { 
   const membros = [
     { nome: "Felipe Dias", cargo: "Product Owner e Desenvolvedor Back-End", foto: felipePhoto, github: "https://github.com/AkashiAkz", linkedin: "https://www.linkedin.com/in/felipediaslima/" },
     { nome: "Luiza Ramalho", cargo: "Scrum Master e Desenvolvedora Full Stack", foto: luizaPhoto, github: "https://github.com/LuizaRamalho", linkedin: "https://www.linkedin.com/in/luiza-souza-ramalho/" },

@@ -1,8 +1,9 @@
+/* CSS atualizado para adicionar barra de rolagem */
 .cadastro * {
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Poppins", sans-serif;
   }
   
   .cadastro .cotn_principal {
@@ -31,21 +32,20 @@
 	width: 640px;
 	height: 280px;
 	overflow: hidden;
-	background-color: #ffaeae;
+	background-color: #fff;
 	box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
-	border-radius: 30px;
   }
   
   .cadastro .cont_forms {
 	position: absolute;
-	overflow: hidden;
+	overflow-y: auto; /* Adiciona rolagem vertical */
 	top: 0;
 	left: 0;
 	width: 320px;
 	height: 280px;
 	background-color: #e1edff;
 	transition: all 0.5s;
-	border-radius: 30px;
+	scrollbar-width: thin; /* Suporte para navegadores compatíveis */
   }
   
   .cadastro .cont_forms_active_login {
@@ -92,7 +92,7 @@
   .cadastro .col_md_login > h2 {
 	font-weight: 400;
 	margin-top: 70px;
-	color: #757575;
+	color: #7a7a7a;
   }
   
   .cadastro .col_md_login > p {
@@ -107,7 +107,7 @@
 	border: solid 1px #ff35ff;
 	padding: 10px;
 	width: 200px;
-	border-radius: 3px;
+	border-radius: 10px;
 	box-shadow: 1px 5px 20px -5px rgba(0, 0, 0, 0.4);
 	color: #ff35ff;
 	margin-top: 10px;
@@ -119,7 +119,7 @@
 	float: left;
 	width: 50%;
   }
-  
+
   .cadastro .cont_ba_opcitiy > h2 {
 	font-weight: 400;
 	color: #fff;
@@ -131,12 +131,11 @@
 	color: #fff;
   }
   
-  /* Background text */
   .cadastro .cont_ba_opcitiy {
 	position: relative;
-	background-color: rgba(114, 16, 16, 0.404);
-	width: 80%;
-	border-radius: 5px;
+	background-color: rgb(0, 25, 109);
+	width: 85%;
+	border-radius: 10px;
 	margin-top: 60px;
 	padding: 15px 0;
   }
@@ -146,7 +145,7 @@
 	border: solid 1px #00a178;
 	padding: 10px;
 	width: 200px;
-	border-radius: 3px;
+	border-radius: 5px;
 	box-shadow: 1px 5px 20px -5px rgba(0, 0, 0, 0.4);
 	color: #00a178;
 	margin-top: 10px;
@@ -174,10 +173,6 @@
 	transition: all 0.5s;
   }
   
-  .cadastro .cont_form_login h2 {
-	font-family: 'Poppins', sans-serif;
-}
-
   .cadastro .cont_forms_active_login {
 	z-index: 2;
   }
@@ -224,12 +219,13 @@
   }
   
   .cadastro .cont_form_login > a {
-    color: #757575;
+	color: #757575;
 	position: relative;
 	float: left;
 	margin: 10px;
 	margin-left: 30px;
   }
+  
   .cadastro .cont_form_sign_up > a {
 	color: #757575;
 	position: relative;
@@ -238,3 +234,85 @@
 	margin-left: 30px;
   }
   
+  /* Estilos para personalizar a barra de rolagem */
+  .cadastro .cont_forms::-webkit-scrollbar {
+	width: 6px; /* Largura da barra */
+  }
+  
+  .cadastro .cont_forms::-webkit-scrollbar-thumb {
+	background-color: #00a178; /* Cor da barra */
+	border-radius: 10px;
+  }
+  
+  .cadastro .cont_forms::-webkit-scrollbar-track {
+	background-color: #f0f0f0; /* Cor do fundo do track */
+  }
+  
+  /* Estilo atualizado para os campos de entrada */
+  .cadastro input[type="text"] {
+	width: 260px;
+	height: 40px;
+	padding: 10px;
+	margin: 10px 0;
+	border: 2px solid #007baf;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	outline: none;
+	transition: border-color 0.3s;
+  }
+  
+  .cadastro input[type="text"]:focus {
+	border-color: #005f80;
+  }
+    /* Estilo atualizado para os campos de entrada */
+	.cadastro input[type="email"] {
+		width: 260px;
+		height: 40px;
+		padding: 10px;
+		margin: 10px 0;
+		border: 2px solid #007baf;
+		border-radius: 10px;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+		font-size: 14px;
+		outline: none;
+		transition: border-color 0.3s;
+	  }
+	  
+	  .cadastro input[type="email"]:focus {
+		border-color: #005f80;
+	  }
+	    /* Estilo atualizado para os campos de entrada */
+  .cadastro input[type="password"] {
+	width: 260px;
+	height: 40px;
+	padding: 10px;
+	margin: 10px 0;
+	border: 2px solid #007baf;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	outline: none;
+	transition: border-color 0.3s;
+  }
+  
+  .cadastro input[type="password "]:focus {
+	border-color: #005f80;
+  }
+    /* Estilo atualizado para os campos de entrada */
+	.cadastro input[type="date"] {
+		width: 260px;
+		height: 40px;
+		padding: 10px;
+		margin: 10px 0;
+		border: 2px solid #007baf;
+		border-radius: 10px;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+		font-size: 14px;
+		outline: none;
+		transition: border-color 0.3s;
+	  }
+	  
+	  .cadastro input[type="date"]:focus {
+		border-color: #005f80;
+	  }
