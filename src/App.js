@@ -18,6 +18,7 @@ function App() {
         <Route path="/trilha/Dicas" element={<Dicas />} /> {/* Rota para Dicas */}
         <Route path="/trilha/Fases/fase1" element={<Fase1 />} /> {/* Rota para Fase 1 */}
         <Route path="/trilha/Fases/fase2" element={<Fase2 />} /> {/* Rota para Fase 2 */}
+
       </Routes>
     </div>
   );

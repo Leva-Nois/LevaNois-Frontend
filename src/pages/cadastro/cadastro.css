@@ -1,8 +1,9 @@
+/* CSS atualizado para adicionar barra de rolagem */
 .cadastro * {
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Poppins", sans-serif;
   }
   
   .cadastro .cotn_principal {
@@ -12,7 +13,6 @@
 	height: 100%;
 	background: url("./images/coa-background.jpg");
 	background-size: cover;
-
   }
   
   .cadastro .cont_centrar {
@@ -38,13 +38,14 @@
   
   .cadastro .cont_forms {
 	position: absolute;
-	overflow: hidden;
+	overflow-y: auto; /* Adiciona rolagem vertical */
 	top: 0;
 	left: 0;
 	width: 320px;
 	height: 280px;
 	background-color: #e1edff;
 	transition: all 0.5s;
+	scrollbar-width: thin; /* Suporte para navegadores compatíveis */
   }
   
   .cadastro .cont_forms_active_login {
@@ -130,7 +131,6 @@
 	color: #fff;
   }
   
-  /* Background text */
   .cadastro .cont_ba_opcitiy {
 	position: relative;
 	background-color: rgba(0, 0, 0, 0.55);
@@ -219,12 +219,13 @@
   }
   
   .cadastro .cont_form_login > a {
-    color: #757575;
+	color: #757575;
 	position: relative;
 	float: left;
 	margin: 10px;
 	margin-left: 30px;
   }
+  
   .cadastro .cont_form_sign_up > a {
 	color: #757575;
 	position: relative;
@@ -233,3 +234,88 @@
 	margin-left: 30px;
   }
   
+  /* Estilos para personalizar a barra de rolagem */
+  .cadastro .cont_forms::-webkit-scrollbar {
+	width: 6px; /* Largura da barra */
+  }
+  
+  .cadastro .cont_forms::-webkit-scrollbar-thumb {
+	background-color: #00a178; /* Cor da barra */
+	border-radius: 10px;
+  }
+  
+  .cadastro .cont_forms::-webkit-scrollbar-track {
+	background-color: #f0f0f0; /* Cor do fundo do track */
+  }
+  
+  /* Estilo atualizado para os campos de entrada */
+  .cadastro input[type="text"] {
+	width: 260px;
+	height: 40px;
+	padding: 10px;
+	margin: 10px 0;
+	border: 2px solid #007baf;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	outline: none;
+	transition: border-color 0.3s;
+  }
+  
+  .cadastro input[type="text"]:focus {
+	border-color: #005f80;
+  }
+    /* Estilo atualizado para os campos de entrada */
+	.cadastro input[type="email"] {
+		width: 260px;
+		height: 40px;
+		padding: 10px;
+		margin: 10px 0;
+		border: 2px solid #007baf;
+		border-radius: 10px;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+		font-size: 14px;
+		outline: none;
+		transition: border-color 0.3s;
+	  }
+	  
+	  .cadastro input[type="email"]:focus {
+		border-color: #005f80;
+	  }
+	    /* Estilo atualizado para os campos de entrada */
+  .cadastro input[type="password"] {
+	width: 260px;
+	height: 40px;
+	padding: 10px;
+	margin: 10px 0;
+	border: 2px solid #007baf;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	outline: none;
+	transition: border-color 0.3s;
+  }
+  
+  .cadastro input[type="password "]:focus {
+	border-color: #005f80;
+  }
+    /* Estilo atualizado para os campos de entrada */
+	.cadastro input[type="date"] {
+		width: 260px;
+		height: 40px;
+		padding: 10px;
+		margin: 10px 0;
+		border: 2px solid #007baf;
+		border-radius: 10px;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+		font-size: 14px;
+		outline: none;
+		transition: border-color 0.3s;
+	  }
+	  
+	  .cadastro input[type="date"]:focus {
+		border-color: #005f80;
+	  }
+	  
+  
+	  

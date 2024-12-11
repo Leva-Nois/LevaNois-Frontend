@@ -17,9 +17,7 @@ const TrailSection = ({ trail }) => {
         {[1, 2, 3, 4].map((level) => (
           <button
             key={level}
-            className={`level-button ${
-              trail.unlocked && level === 1 ? "unlocked" : "locked"
-            }`}
+            className={`level-button ${trail.unlocked && level === 1 ? "unlocked" : "locked"}`}
             onClick={() => {
               if (trail.unlocked && level === 1) {
                 // Navega para a tela da fase

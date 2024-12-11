@@ -100,6 +100,12 @@ const Fase1 = () => {
           >
             Clique aqui
           </a>
+          <button
+            className="next-level-button"
+            onClick={() => setScreen('completed')}
+          >
+            Estão atualizados
+          </button>
         </div>
       )}
     </div>
