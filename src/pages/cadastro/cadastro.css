@@ -3,6 +3,7 @@
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
+	
 	font-family: "Poppins", sans-serif;
   }
   
@@ -316,3 +317,5 @@
 	  .cadastro input[type="date"]:focus {
 		border-color: #005f80;
 	  }
+
+	  

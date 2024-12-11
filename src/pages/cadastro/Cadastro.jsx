@@ -1,56 +1,87 @@
-  import React, { useState, useEffect, useRef } from "react";
-  import "./cadastro.css";
+import React, { useState, useRef, useEffect } from "react";
+import axios from "axios";
+import "./cadastro.css";
 
-  const Cadastro = () => {
-    const [isLoginActive, setIsLoginActive] = useState(true);
-    const contFormsRef = useRef(null);
-    const formLoginRef = useRef(null);
-    const formSignUpRef = useRef(null);
+const Cadastro = () => {
+  const [isLoginActive, setIsLoginActive] = useState(true);
+  const [loginData, setLoginData] = useState({ email: "", senha: "" });
+  const [signupData, setSignupData] = useState({
+    nomeUsuario: "",
+    emailUsuario: "",
+    dataNascimento: "",
+    paisInteresseId: "",
+    senhaUsuario: "",
+  });
+  const contFormsRef = useRef(null);
+  const formLoginRef = useRef(null);
+  const formSignUpRef = useRef(null);
 
-    useEffect(() => {
-      if (contFormsRef.current && formLoginRef.current && formSignUpRef.current) {
-        if (isLoginActive) {
-          contFormsRef.current.classList.add("cont_forms_active_login");
-          contFormsRef.current.classList.remove("cont_forms_active_sign_up");
-          formLoginRef.current.style.display = "block";
-          formSignUpRef.current.style.opacity = "0";
-
-          setTimeout(() => {
-            formLoginRef.current.style.opacity = "1";
-          }, 400);
-
-          setTimeout(() => {
-            formSignUpRef.current.style.display = "none";
-          }, 200);
-        } else {
-          contFormsRef.current.classList.add("cont_forms_active_sign_up");
-          contFormsRef.current.classList.remove("cont_forms_active_login");
-          formSignUpRef.current.style.display = "block";
-          formLoginRef.current.style.opacity = "0";
-
-          setTimeout(() => {
-            formSignUpRef.current.style.opacity = "1";
-          }, 100);
-
-          setTimeout(() => {
-            formLoginRef.current.style.display = "none";
-          }, 400);
-        }
-      }
-    }, [isLoginActive]);
-
-    const hideLoginAndSignUp = () => {
-      if (contFormsRef.current && formLoginRef.current && formSignUpRef.current) {
-        contFormsRef.current.classList.remove("cont_forms_active_login", "cont_forms_active_sign_up");
+  useEffect(() => {
+    if (contFormsRef.current && formLoginRef.current && formSignUpRef.current) {
+      if (isLoginActive) {
+        contFormsRef.current.classList.add("cont_forms_active_login");
+        contFormsRef.current.classList.remove("cont_forms_active_sign_up");
+        formLoginRef.current.style.display = "block";
         formSignUpRef.current.style.opacity = "0";
-        formLoginRef.current.style.opacity = "0";
+
+        setTimeout(() => {
+          formLoginRef.current.style.opacity = "1";
+        }, 400);
 
         setTimeout(() => {
           formSignUpRef.current.style.display = "none";
+        }, 200);
+      } else {
+        contFormsRef.current.classList.add("cont_forms_active_sign_up");
+        contFormsRef.current.classList.remove("cont_forms_active_login");
+        formSignUpRef.current.style.display = "block";
+        formLoginRef.current.style.opacity = "0";
+
+        setTimeout(() => {
+          formSignUpRef.current.style.opacity = "1";
+        }, 100);
+
+        setTimeout(() => {
           formLoginRef.current.style.display = "none";
-        }, 500);
+        }, 400);
       }
-    };
+    }
+  }, [isLoginActive]);
+
+  const hideLoginAndSignUp = () => {
+    if (contFormsRef.current && formLoginRef.current && formSignUpRef.current) {
+      contFormsRef.current.classList.remove("cont_forms_active_login", "cont_forms_active_sign_up");
+      formSignUpRef.current.style.opacity = "0";
+      formLoginRef.current.style.opacity = "0";
+
+      setTimeout(() => {
+        formSignUpRef.current.style.display = "none";
+        formLoginRef.current.style.display = "none";
+      }, 500);
+    }
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:8080/usuarios/login", loginData);
+      localStorage.setItem("token", response.data.token);
+      alert("Login bem-sucedido!");
+    } catch (error) {
+      alert("Erro no login. Verifique suas credenciais.");
+    }
+  };
+
+  const handleSignup = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:8080/usuarios/", signupData);
+      alert("Cadastro realizado com sucesso!");
+      setIsLoginActive(true);
+    } catch (error) {
+      alert("Erro no cadastro.");
+    }
+  };
 
     return (
       <div className="cadastro">
